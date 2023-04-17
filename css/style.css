@@ -198,7 +198,14 @@ text-decoration: none;
     padding-bottom: 120px;
     gap: 24px;
 
-
+}
+.info-icons-container {
+    display: flex;
+    background-color: #F4F4FD;
+    height: 112px;
+    width: 264px;
+    justify-content: center;
+    align-items: center;
 }
 .second-section-list {
     display: flex;
@@ -285,7 +292,69 @@ justify-content: center;
     }
     .team-info > p {
         text-align: center;
+        margin-bottom: 8px;
     }
+    /**
+      |============================
+      | Customers styles
+      |============================
+    */
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .customers-title {
+        font-size: 36px;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: var(--darkColor);
+            margin-bottom: 72px;
+    }
+.clients-list{
+display: flex;
+align-items: center;
+gap: 24px;
+}
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    fill: #8E8F99;
+}
+.clients-link:hover,
+.clients-link:focus {
+    fill: #404BBF;
+    border: 1px solid #404BBF;
+}
+
+
+/* Socials ICON */
+
+.socials {
+    display:flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primaryBrand);
+    border-radius: 50%;
+    fill: #F4F4FD;
+}
+.social-links:hover,
+.social-links:focus {
+    background-color: #404BBF;
+}
 .more-info{
     background-color: var(--darkColor);
 
@@ -322,6 +391,17 @@ justify-content: center;
         letter-spacing: 0.02em;
         color: #F4F4FD;
         width: 264px;
+
+}
+.social-footer {
+}
+.social-footer-list{
+display: flex;
+}
+.social-footer-item{
+
+}
+.social-footer-svg {
 
 }
 .portfolio-header {
