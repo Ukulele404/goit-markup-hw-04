@@ -7,7 +7,6 @@
     --accentColor: #E7E9FC;
     --lightColor: #F4F4FD;
     --backgroungColor: #FFFFFF;
-
 }
 
 *,
@@ -52,6 +51,9 @@ img {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+     0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header.container {
     display: flex;
@@ -141,8 +143,14 @@ text-decoration: none;
 /* First Section */
 
 .title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
     background-color: var(--darkColor);
-    text-align: center;
+    background-image:  linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/title/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -156,11 +164,13 @@ text-decoration: none;
         margin-right: auto;
         margin-bottom: 48px;
         margin-left: auto;
+        text-align: center;
       
     }
         .title-button{
             background-color: #4D5AE5;
             font-family: "Roboto", sans-serif;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
@@ -179,6 +189,7 @@ text-decoration: none;
             .title-button:hover,
             .title-button:focus {
              background-color: #404BBF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         } 
 
 .info {
@@ -261,6 +272,7 @@ justify-content: center;
          background-color: var(--backgroungColor);
         width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
     }
     .team-info {
@@ -315,6 +327,9 @@ justify-content: center;
 .portfolio-header {
     display: flex;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px
+      rgba(46, 47, 66, 0.08);
 }
 .portfolio.container {
     display: flex;
@@ -370,6 +385,7 @@ justify-content: center;
 gap: 24px;
 margin-bottom: 72px;
 }
+
 .portfolio-button{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -388,6 +404,9 @@ margin-bottom: 72px;
     color: #FFFFFF;
     background-color: #404BBF;
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+     0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 .portfolio-img-list {
@@ -395,6 +414,12 @@ display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
+}
+
+.images-li:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+     0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 .images-li {
     width: calc((100% - 48px) / 3);
