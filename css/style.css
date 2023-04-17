@@ -431,13 +431,16 @@ height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .social-links-footer:hover,
 .social-links-footer:focus {
  background-color: #31d0aa;
 }
 .social-footer-svg {
-
+    fill: var(--lightColor);
+width: 24px;
+height: 24px;
 }
 .portfolio-header {
     display: flex;
@@ -534,7 +537,8 @@ row-gap: 48px;
 .images{
     display: block;
 }
-.images:hover {
+.images:hover,
+.images:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
      0px 1px 1px rgba(46, 47, 66, 0.16),
       0px 2px 1px rgba(46, 47, 66, 0.08);;
